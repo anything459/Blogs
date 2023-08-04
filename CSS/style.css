@@ -1,1 +1,241 @@
 
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes flow{
+    0%{
+        transform: scaleX(10%);
+        background: repeating-linear-gradient(rgb(206, 93, 93), rgb(27, 96, 180));
+    }
+    100%{
+        background: rgba(255, 255, 255, 0);
+    }
+}
+
+.topbar{
+    animation: flow 2s;
+    text-align: center;
+    height: 4pc;
+    border: 1px solid rebeccapurple;
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    z-index: 10;
+}
+
+.bg-image {
+    background: white;
+    filter: blur(8px);
+    -webkit-filter: blur(0px);
+    height: 100%;
+    box-shadow: 0 0 12px 3px;
+    border-radius: 15px;
+  }
+
+nav{
+    margin: 1pc;
+}
+
+  /* Position text in the middle of the page/image */
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 15px;
+    margin: 0;
+}
+
+label {
+    font-size: 2pc;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.Slider {
+    margin: 5.5pc 0;
+}
+
+.Slider-box {
+    height: 30pc;
+    /* border: 1px dotted; */
+}
+
+.slider-slide {
+    background: url("https://images.pexels.com/photos/5925951/pexels-photo-5925951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.middle {
+    margin: 5.5pc 0;
+}
+
+
+li{
+    border-bottom: 2px solid rgba(94, 93, 93, 0.711);
+    margin: 1pc;
+    list-style: none;
+    padding: 1pc;
+    transition: all 1s ease-in-out;
+    
+}
+
+li:hover{
+    box-shadow:  0 0 8px 2px;
+    border-radius: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.descript {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30pc;
+}
+
+.writerinfo {
+    display: flex;
+    align-items: center;
+}
+
+.disp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: -webkit-center;
+}
+
+.img, .box-dis{
+    width: 18pc;
+    height: 10.6pc;
+}
+
+img{width: 100%;height: 100%;border-radius: 15px;}
+
+.more {
+    display: flex;
+    justify-content: space-around;
+}
+
+button.btn {
+    width: 8pc;
+    height: 3.4pc;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.Features-ContentBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    margin-bottom: 4pc;
+}
+
+.Boxes {
+    height: 15pc;
+   transition: 1s;
+} 
+/* .Boxes:hover{
+    box-shadow: 0 0 6px 0px;
+    padding: 9px;
+    border-radius: 15px;
+} */
+/* ------------------- Post Section --------------- */
+.images {
+    width: 20pc;
+    height: 20pc;
+    margin: 10px;
+    padding: 5px;
+}
+
+.plot {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* -----------foooter -------------- */
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 20pc;
+}
+
+.r-dip{
+    display: flex;
+
+}
+
+.links-icon{
+    cursor: progress;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+lord-icon{
+    width: 35px;
+    height: 35px;
+   
+}
+
+.link-name-text{
+    margin: 0;
+    font-size: 15px;
+}
+
+.links-text{
+    padding: 8px;
+}
+::-webkit-scrollbar{
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 100vw;
+    margin-block: 1pc;
+    border: 1px solid;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 100vw;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(147, 147, 147);
+  }
+
+  .dis {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
